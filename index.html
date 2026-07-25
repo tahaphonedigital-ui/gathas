@@ -30,9 +30,15 @@ linear-gradient(180deg,#050505,#090909,#050505);
 }
 
 h1{
-font-size:55px;
+font-size:70px;
 color:#d4af37;
 margin:0;
+letter-spacing:8px;
+font-weight:300;
+text-shadow:
+0 0 10px rgba(212,175,55,.4),
+0 0 30px rgba(212,175,55,.2);
+animation: glow 3s ease-in-out infinite alternate;
 }
 
 p{
@@ -114,4 +120,16 @@ border:1px solid #d4af37;
 
 </body>
 </html>
+@keyframes glow{
+from{
+text-shadow:
+0 0 10px rgba(212,175,55,.2),
+0 0 20px rgba(212,175,55,.1);
+}
+to{
+text-shadow:
+0 0 20px rgba(212,175,55,.6),
+0 0 50px rgba(212,175,55,.3);
+}
+}
 
