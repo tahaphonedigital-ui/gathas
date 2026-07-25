@@ -73,12 +73,22 @@ background:#111;
 }
 
 .card{
-background:#1a1a1a;
-padding:30px;
-border-radius:18px;
+background:rgba(255,255,255,.03);
+backdrop-filter:blur(8px);
+padding:35px 25px;
+border-radius:24px;
 text-align:center;
 font-size:22px;
-border:1px solid #d4af37;
+border:1px solid rgba(212,175,55,.25);
+transition:.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+box-shadow:0 20px 40px rgba(212,175,55,.15);
+background:rgba(255,255,255,.05);
 }
 </style>
 
