@@ -3,48 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>گات‌ها</title>
+
+<title>گات‌ها | تاریخ ایران باستان</title>
 
 <style>
 body{
 margin:0;
-font-family:tahoma;
-background:#111;
+background:#080808;
 color:white;
+font-family:tahoma;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9));
 text-align:center;
-}
-
-header{
-background:#c79a2b;
 padding:20px;
-font-size:30px;
-font-weight:bold;
-}
-
-section{
-padding:50px 20px;
 }
 
 h1{
-font-size:40px;
-color:#ffd700;
+font-size:55px;
+color:#d4af37;
+margin:0;
 }
 
 p{
 font-size:20px;
+color:#ddd;
+max-width:700px;
 line-height:2;
-max-width:800px;
-margin:auto;
 }
 
-button{
-margin-top:30px;
-padding:15px 35px;
+.button{
+margin-top:35px;
+padding:18px 40px;
+background:#d4af37;
+color:#111;
+text-decoration:none;
+border-radius:40px;
 font-size:20px;
-background:#ffd700;
-border:none;
-border-radius:10px;
-cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.button:hover{
+background:white;
+}
+
+.menu{
+padding:60px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+background:#111;
+}
+
+.card{
+background:#1a1a1a;
+padding:30px;
+border-radius:18px;
+text-align:center;
+font-size:22px;
+border:1px solid #d4af37;
 }
 </style>
 
@@ -52,19 +76,36 @@ cursor:pointer;
 
 <body>
 
-<header>
-گات‌ها
-</header>
+<section class="hero">
 
-<section>
-
-<h1>به سایت گات‌ها خوش آمدید</h1>
+<h1>گات‌ها</h1>
 
 <p>
-مرجع فارسی آشنایی با زرتشت، گات‌ها، تاریخ ایران باستان و آیین زرتشت.
+سفری به اعماق تاریخ ایران...
+از زرتشت و گات‌ها تا کوروش بزرگ، هخامنشیان و تمدن‌هایی که جهان را تغییر دادند.
 </p>
 
-<button>شروع مطالعه</button>
+<a href="#menu" class="button">شروع سفر</a>
+
+</section>
+
+<section class="menu" id="menu">
+
+<div class="card">گات‌ها</div>
+
+<div class="card">زرتشت</div>
+
+<div class="card">کوروش بزرگ</div>
+
+<div class="card">شاهنشاهی هخامنشی</div>
+
+<div class="card">تاریخ ایران باستان</div>
+
+<div class="card">آیین زرتشت</div>
+
+<div class="card">تمدن‌های پیش از هخامنشی</div>
+
+<div class="card">مقالات تاریخی</div>
 
 </section>
 
