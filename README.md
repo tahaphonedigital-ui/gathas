@@ -1,4 +1,7 @@
-<section id="history">
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+...<section id="history">
 
     <h2>🏛 تاریخ ایران</h2>
 
@@ -62,3 +65,5 @@
     </div>
 
 </section>
+</body>
+</html>
